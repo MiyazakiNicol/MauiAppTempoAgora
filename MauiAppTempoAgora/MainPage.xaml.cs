@@ -27,10 +27,13 @@ namespace MauiAppTempoAgora
 
                         dados_previsao = $"Latitude: {t.lat} \n" +
                                          $"Longitude: {t.lon} \n" +
+                                         $"Clima: {t.main} - {t.description} \n" +
+                                         $"Velocidade do Vento: {t.speed} m/s \n" +
+                                         $"Visibilidade: {t.visibility} metros \n" +
                                          $"Nascer do Sol: {t.sunrise} \n" +
                                          $"Por do Sol: {t.sunset} \n" +
-                                         $"Temp Máx: {t.temp_max} \n" +
-                                         $"Temp Min: {t.temp_min} \n";
+                                         $"Temp Máx: {t.temp_max} °C\n" +
+                                         $"Temp Min: {t.temp_min} °C\n";
 
                         lbl_res.Text = dados_previsao;
 
